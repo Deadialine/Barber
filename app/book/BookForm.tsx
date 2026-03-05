@@ -111,11 +111,11 @@ export function BookForm({ services }: { services: Service[] }) {
           className="space-y-6"
         >
           <div className="grid gap-4 sm:grid-cols-2">
-            <label className="space-y-">
+            <label className="space-y-" >
               <span className="text-sm text-white/70">Υπηρεσία</span>
-              <Select className="bg-gray-700 text-white" value={serviceId} onChange={(e) => setServiceId(e.target.value)} required>
+              <Select  value={serviceId} onChange={(e) => setServiceId(e.target.value)} required > 
                 {services.map((service) => (
-                  <option key={service.id} value={service.id}>
+                  <option key={service.id} value={service.id}> 
                     {service.name} • {service.durationMinutes} λεπτά • {service.priceText}
                   </option>
                   

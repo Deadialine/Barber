@@ -22,7 +22,7 @@ export default async function HomePage() {
         <div className="relative mb-6">
           <div className="absolute -inset-6 rounded-full bg-accent-cyan/15 blur-3xl" aria-hidden />
           <Image
-            src="/logo.svg"
+            src="/STARLIGHT_LOGO.svg"
             alt="Λογότυπο Starlight Barbershop"
             width={180}
             height={180}
