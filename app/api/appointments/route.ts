@@ -42,9 +42,9 @@ export async function POST(req: NextRequest) {
 
   const appointment = dbx.createAppointment({
     customerName: data.customerName,
-    customerPhone: data.customerPhone,
-    customerEmail: data.customerEmail || null,
-    note: data.note || null,
+    customerPhone: data.customerPhone ?? null,  // Use null if undefined
+    customerEmail: data.customerEmail ?? null,  // Use null if undefined
+    note: data.note ?? null,  // Use null if undefined
     startAt: slotStart.toISOString(),
     endAt: slotEnd.toISOString(),
     serviceId: data.serviceId,
